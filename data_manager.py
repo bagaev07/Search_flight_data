@@ -1,10 +1,10 @@
 import requests
-URL_SHEET = "https://api.sheety.co/566d9f4e55beffd0ada98fa062927e71/avbFlightDeals/prices"
+URL_SHEET = ""
 HEADER_SHEET = {
-    "Authorization": "Basic dHJhdmVsX2V5ZTpwYXNzd29yZHM=",
+    "Authorization": "",
 }
 
-class DataManager():
+class DataManager:
     #This class is responsible for talking to the Google Sheet.
     def __init__(self):
         self.__sheet_url = URL_SHEET
@@ -34,6 +34,21 @@ class DataManager():
             if code == city_code:
                 city = data[i]['name']
                 return city
+
+
+    def get_new_user(self, first_name, last_name, email):
+        sheets_new_user = ""
+        params = {
+            'user':{
+                "firstName": first_name,
+                "lastName": last_name,
+                'email': email,
+            }
+        }
+        response = requests.post(sheets_new_user, json=params, headers=self.__header_sheet)
+        response.raise_for_status()
+
+
 
 
 
