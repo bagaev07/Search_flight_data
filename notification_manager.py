@@ -2,8 +2,8 @@ import requests
 import smtplib
 from data_manager import DataManager
 
-e_mail = "vabvesel@gmail.com"
-password = "oqrfwuwvrebvumbg"
+e_mail = ""
+password = ""
 fire = "🔥"
 
 class NotificationManager:
@@ -48,9 +48,9 @@ class NotificationManager:
                                         f"Fly from {origin_iata}-{origin_name} to {dest_iata}-{dest_name}, from {depart_date} \n\n 'https://www.aviasales.ru{flight_link}".encode('utf-8'))
 
     def telegram_bot(self, text):
-        token = "5702975022:AAEgm-x5InxywdkerFHFk6RO2Z1K7iWftXw"
+        token = ""
         url = "https://api.telegram.org/bot"
-        channel_id = "-1001838681899"
+        channel_id = ""
         url += token
         method = url + "/sendMessage"
         query = {

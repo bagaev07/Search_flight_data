@@ -2,7 +2,7 @@ import requests
 from flight_data import FlightData
 
 # Connection travelpayouts api aviasales
-AVIASALES_TOKEN = {"X-Access-Token":  "4b5bc811512909feca0abb4a671ecfc8"}
+AVIASALES_TOKEN = {"X-Access-Token":  ""}
 AVIASALES_URL = "https://api.travelpayouts.com/aviasales/v3/grouped_prices"
 AVIASALES_ALTERNATIVE = "http://api.travelpayouts.com/v2/prices/nearest-places-matrix?"
 

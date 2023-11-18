@@ -1,7 +1,7 @@
 import requests
-URL_SHEET = "https://api.sheety.co/9753309b143051415d128068678a0d9d/avbFlightDeals/prices"
+URL_SHEET = ""
 HEADER_SHEET = {
-    "Authorization": "Basic QVZCX0ZsaWdodDprQk5EeThXdGxibTNheWozbDVZcQ==",
+    "Authorization": "",
 }
 
 class DataManager:
@@ -37,7 +37,7 @@ class DataManager:
 
 
     def get_new_user(self, first_name, last_name, email):
-        sheets_new_user = "https://api.sheety.co/9753309b143051415d128068678a0d9d/avbFlightDeals/users"
+        sheets_new_user = ""
         params = {
             'user':{
                 "firstName": first_name,

@@ -2,7 +2,7 @@ import requests
 import time
 from data_manager import DataManager
 
-TOKEN = "5702975022:AAEgm-x5InxywdkerFHFk6RO2Z1K7iWftXw"
+TOKEN = ""
 URL = "https://api.telegram.org/bot"
 REQUEST = URL + TOKEN + "/"
 reg_users = DataManager()
